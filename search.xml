@@ -17,29 +17,26 @@
     
     
     <entry>
+      <title>编程干货️为什么说PHP是世界上最好的语言</title>
+      <link href="/2022/08/10/02-page/"/>
+      <url>/2022/08/10/02-page/</url>
+      
+        <content type="html"><![CDATA[<p>PHP领域较新，目前发展非常快，很多软硬件技术出现的时间都不太长（如ARM处理器、PHP操作系统、LINUX操作系统），大多数人没有条件接触或进入PHP行业，更谈不上能有机会接受专业人士的指导。因此，踏进这个行业的难度比较大，PHP人才稀缺，身价自然也水涨船高。</p><p>权威部门统计，我国PHP人才缺口每年50万人左右。根据前程无忧网发布的调查报告，PHP软件开发是未来几年热门和受欢迎的职业之一，具有10年工作经验的高级PHP工程师年薪在30万元左右。即使是初级的PHP软件开发人员，平均月薪也达到了4000—7000元，中高级的PHP工程师月薪平均超过10000元。 做软件实际上有高下之分，开发语言从机器语言、汇编到C、C++，再到红透半边天的Java、C＃等，该学哪种呢？为什么有些开发者工资低，而有些开发者千金难求？为什么3年的Java高级程序员薪水仅仅8k-10k，而一个Linux底层C语言程序员两年经验就敢要10k的薪水？</p><p>还是门槛，比如月薪15k的LinuxPHP开发职位，门槛就有 Linux系统、Shell编程、Linux开发环境、C语言、ARM硬件平台、数据结构、Linux内核、驱动程序等，粗略数数就有8道关口，他需要非常熟悉整个的计算机体系，能做出实际的产品，而Java的开发者却仅仅是会使用名叫Java的语言工具，始终高高飘在众多层次之上，开发项目非常快，甚至可以不知道OSI模型，很可能自始至终都是软件蓝领。</p><p>PHP开发本身也有高下之分，至少包含PHP应用程序工程师和底层的驱动内核工程师两种。前者同样是使用现成工具进行简单劳动，比如使用J2ME开发小游戏或者进行一些界面开发，而后者是根据芯片具体情况把操作系统（如Linux）移植到上面，同时编写必要的驱动程序，改写相应的内核代码。很显然后者是一个公司真正的技术核心。而技术核心的工资很可能是其他开发者的数倍。</p><p>PHP开发突出强制和项目，学习不仅仅是学习几项技术，而是构建你的知识体系。比如学习PHP开发，就要从基础Linux，C语言，数据结构开始，到ARM，汇编，Linux内核、驱动等，更重要的是更多的项目练习，设计至少5个项目，多达10000行强制核心代码的编写可以让你真正获得知识。为进入外企或者出国做准备。</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Hexo+Github博客搭建记录</title>
       <link href="/2019/08/10/my-first-page/"/>
       <url>/2019/08/10/my-first-page/</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[<p>1.git安装<br>前往git官网下载安装git，官网地址：Git - Downloads (git-scm.com)、<br>相关教程：Git下载安装及设置详细教程_sanxd的博客-CSDN博客_git 安装<br>环境变量配置：在PATH下添加Git和Git/bin的路径。</p><p>2.node.js安装<br>前往官网下载node.js，官网地址Download | Node.js (nodejs.org)<br>环境变量配置：在PATH下添加npm的路径。</p><p>3.hexo安装<br>在命令行中输入npm install -g hexo-cli命令进入hexo的安装。<br>环境变量配置：在PATH下添加hexo-cli和.bin的路径。<br>完成所有配置后，在cmd中输入如图所示内容查看路径是否配置正确及版本。</p><p>4.hexo相关命令操作：<br>hexo init <folder>创建一个新的网页项目<br>hexo new page <name>创建一个新的网页文件夹<br>hexo new <name>创建一个新的md文章<br>hexo clean清空本地生成<br>hexo g本地生成<br>hexo s端口生成<br>hexo d自动部署</p><p>5.本地生成网页基本操作<br>例如<br>hexo init C:\Users\Lenovo\Desktop\text<br>在桌面test文件夹生成网页项目。</p><p>cd C:\Users\Lenovo\Desktop\text<br>进入网页项目文件夹<br>hexo new first_blog<br>hexo g &amp;&amp; hexo s<br>部署到端口，然后就可以进入<a href="http://localhost:4000/">http://localhost:4000</a> 查看你的新网页啦。</p><p>6.部署到USTC服务器<br>FileZilla的安装<br>登陆 home.ustc.edu.cn （连接校园网下按下面操作提示即可）<br>服务器上传<br>在服务器下创建public_html文件夹，然后将本地网页中的public文件夹下所有内容传上即可。</p>]]></content>
       
       
-      <categories>
-          
-          <category> 软件安装与配置 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> Hexo </tag>
-            
-            <tag> Github </tag>
-            
-            <tag> 博客 </tag>
-            
-        </tags>
       
     </entry>
     
