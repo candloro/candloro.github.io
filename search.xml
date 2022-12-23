@@ -4,6 +4,32 @@
   
     
     <entry>
+      <title>git-page</title>
+      <link href="/2022/12/23/git-page/"/>
+      <url>/2022/12/23/git-page/</url>
+      
+        <content type="html"><![CDATA[<p>切换主分支 git  pull<br>切换 自己分支 git merge master</p><p>在项目所在位置打开git-bash， 在git bash交互环境输入命令：<br>git config credential.helper store<br>不加参数： –global 只对这个仓库生效，并非全局设置 。<br>后续正常 push，第一次要输入账号密码，以后就不用了。</p><p>使用git pull或者git push每次都需要输入用户名和密码很繁琐，耽误时间，现在教大家一条命令实现保存用户名和密码不用再输入<br>git config –global credential.helper store</p><p>git pull /git push (第一次输入，后续就不用再次数据)</p><p>push你的代码 (git push), 这时会让你输入用户名和密码, 这一步输入的用户名密码会被记住, 下次再push代码时就不用输入用户名密码 ! 这一步会在用户目录下生成文件.git-credential记录用户名密码的信息。</p><p>如何让他再次失效呢</p><p>1<br>git提交时不用输入用户名密码的方法<br>在git push时每次都要输入用户名和密码是一件很痛苦的事，其实解决方法很简单，在文件夹（包含隐藏文件夹.git文件夹的）内右键 git bash here</p><p>在git bash交互环境输入命令</p><p>git config credential.helper store<br>这里没有–global意思是指只对这个仓库生效，建议以后都不要加–global</p><p>让代码配置以仓库为单位存储就好，设置成全局不灵活</p><p>打开.git文件夹的.config文件，回发现多了两行</p><p>[credential]</p><p>helper=store<br>git push 到远程仓库，输入用户名和密码，注意要输入正确的</p><p>再次运行git push 就不用输入用户名和密码了</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>interview-page</title>
+      <link href="/2022/12/23/interview-page/"/>
+      <url>/2022/12/23/interview-page/</url>
+      
+        <content type="html"><![CDATA[<ol><li>自我介绍</li><li>上家公司与当前位置</li><li>为什么从上家公司离职</li><li>你的优点与缺点是什么</li><li>人员组成</li><li>项目如何分工</li><li>你有什么想问我的吗</li></ol><p>BFC/盒子模型/flex布局/H5新特性/rem适配</p><p>作用域与作用域链<br>闭包<br>函数中的this</p><p>原型与原型链<br>垃圾回收机制<br>JS的事件循环机制<br>promise / async与await<br>箭头函数的特点<br>跨域问题<br>axios的二次封装 =&gt; axios的整体执行流程<br>从输入url到渲染出页面的整个过程<br>函数节流与防抖<br>深拷贝</p><p>区别v-if与v-show<br>为什么v-for与v-if不适合一起使用<br>computed与watcher<br>Vue组件的生命周期<br>组件间通信<br>history与hash路由的区别<br>Vue响应式数据原理<br>$nextTick的原理<br>虚拟DOM与DOM Diff<br>说说vue组件的模板解析<br>说说你对TS的理解<br>说说Vue3的特点</p><p>说说对react的理解<br>说说react的hook<br>说说react组件间通信</p><p>说一下你的项目<br>封装过什么组件<br>遇到过什么问题<br>项目优化<br>权限控制如何实现</p><p>22<br>2000 出生 22岁</p><p>两年经验<br>统–<br>2019.09-2022.06<br>非<br>2018.09-2021.06<br>2019.09 2020.06 2021.06 2022.06<br>21  22 </p><p>爱鱼优品<br>这是一个使用uniapp vant 搭建的小程序app<br>主要有首页、分类页、购物车页、个人中心页<br>‘</p><p>screenHeight是手机屏幕的总高度，包含状态栏、导航栏、页面内容。状态栏是手机最上面显示信号、电量的那一小条。导航栏是显示小程序标题和胶囊按钮的那一条。</p><p>windowHeight是页面内容的高度，默认不包括状态栏和导航栏。但是如果你设置了自定义导航栏（”navigationStyle”:”custom”），它的值就和screenHeight一样了。</p><ol><li></li></ol><p>2021.07 2022.09   武汉CET中电技术有限公司       web前端开发<br>岗位职责：</p><ol><li>   与产品和后端进行密切交流和合作，共同研讨产品和技术的实现方案；</li><li>   与UI设计师、交互设计师合作完成具有良好的兼容性和适用性的产品；</li><li>   遵守代码规范，编写结构清晰、可维护性强、高质量、高效率的代码；</li></ol>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Hello World</title>
       <link href="/2022/12/21/hello-world/"/>
       <url>/2022/12/21/hello-world/</url>
