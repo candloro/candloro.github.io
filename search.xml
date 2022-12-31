@@ -4,6 +4,45 @@
   
     
     <entry>
+      <title>windows.jQuery ||document.write是什么意思</title>
+      <link href="/2022/12/31/windows-jQuery-document-write%E6%98%AF%E4%BB%80%E4%B9%88%E6%84%8F%E6%80%9D/"/>
+      <url>/2022/12/31/windows-jQuery-document-write%E6%98%AF%E4%BB%80%E4%B9%88%E6%84%8F%E6%80%9D/</url>
+      
+        <content type="html"><![CDATA[<p>“window.jQuery || document.write”经常用到这句代码是什么意思<br>2020-07-03 13:08:33字体：大 中 小来源：转载供稿：网友<br>这篇文章主要为大家详细介绍了“window.jQuery || document.write”经常用到这句代码是什么意思，具有一定的参考价值，感兴趣的小伙伴们可以参考一下,有需要的朋友可以收藏方便以后借鉴。<br>我们在使用JQ特效的时候，很多时候会有这样一句话：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;window.jQuery || document.write(&#x27;&lt;script src=&quot;js/jquery-1.11.0.min.js&quot;&gt;&lt;//script&gt;&#x27;)&lt;/script&gt;</span><br></pre></td></tr></table></figure><p>很多朋友可能不太能理解这句代码是什么意思。其实很简单，一般在这里个文件上边的<script>应该是有一个通过cdn加载文件jquery-1.11.0.min.js的路径，这里就是上边的路径不能加载文件的时候，使用下边的本地文件，一种优化响应的策略。</p><p>例如：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;script src=&quot;http://cdn.bootcss.com/jquery/1.11.0/jquery.min.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;</span><br><span class="line"></span><br><span class="line">&lt;script&gt;window.jQuery || document.write(&#x27;&lt;script src=&quot;js/jquery-1.11.0.min.js&quot;&gt;&lt;//script&gt;&#x27;)&lt;/script&gt;</span><br></pre></td></tr></table></figure><p>下面的语句就是首先会判断有没有window.jQuery，即判断是否导入了jquery,如果没有（也就是false）,则运行后面的代码，将jquery引入到项目中。</p><p>||逻辑判断的规则：如果||前面的表达式是true,就返回||前面表达式true的结果，如果是false,则运行后面的表达式。</p><p>现在明白了没有，说白了就是下面的语句是防止上面的JQ引入失败，不成功的时候启用。</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Bulma</title>
+      <link href="/2022/12/31/Bulma/"/>
+      <url>/2022/12/31/Bulma/</url>
+      
+        <content type="html"><![CDATA[<p>或许你之前听说过Bulma；如果没有，也没关系。Bulma是一个轻量级、可配置的CSS框架。<br>​​</p><p>或许你之前听说过Bulma；如果没有，也没关系。如前所述，Bulma是一个轻量级、可配置的CSS框架，完全基于Flexbox。Flexbox是一个相对较新的CSS规范，在本书编写时，它得到了浏览器的良好支持。</p><p>Bulma底层使用Flexbox来运行，并帮助你解决了使用Flexbox时需要考虑的难点。使用Bulma无须了解Flexbox，但应掌握基本的CSS知识。</p><p>本文将从较高的层次介绍Bulma，带你熟悉Bulma及其术语和概念，本文节选自图书《Bulma必知必会》。</p><p>1.1　Bulma有何独特之处</p><p>与其他CSS框架相比，Bulma有如下不同之处。</p><p>现代化：整个Bulma是基于CSS Flexbox设计的。<br>响应式：Bulma的设计同时支持移动端和桌面设备。<br>易学：大多数用户只需几分钟便能入门。<br>语法简单：Bulma使用更少的HTML，所以代码易于阅读和编写。<br>可定制：Bulma提供了300多个SASS变量，基于这些样式变量，你可以定制自己的主题框架。<br>无JavaScript：Bulma完全基于CSS设计编写，因此可以很优雅地与任何JavaScript框架（Angular、Vue.js、React、Ember或者纯JavaScript应用）集成。</p><p>1.2　简易的栅格系统</p><p>Bulma最著名的当属其简单明了的栅格架构：</p><p>就是这样，只需两个CSS类（columns 作为容器类，column作为其子类），即可实现响应式栅格系统，无须指定其他任何维度，两列会自动分占宽度的50%。</p><p>如果想要第3列，只需再添加一个 column 即可：</p><p>每一列会自动占据33% 的宽度，无须编写额外的代码。如果想要更多列，按上述操作添加</p><p>column</p><p>即可实现，Bulma会帮你自动适配大小。</p><p>1.3　可读性</p><p>Bulma简单易学，因为它的代码简洁易读。下面是一个Bulma按钮的代码，仅需添加一个button类即可实现。</p><p>为了扩展该按钮的功能，Bulma提供了修饰符类，用于给基础的按钮提供其他样式。要对该按钮应用主色调青绿色，并增大尺寸，只需添加 is-primary 类和 is-large 类：​</p><p>提示：最好使用“primary”“secondary”这样的主次命名约定。这将有助于给样式赋予一些意义，并为以后的定制留有余地。</p><p>1.4　可定制</p><p>Bulma有300多个变量，几乎可以覆盖Bulma中的所有属性，因此可以高度定义个性化设置。</p><p>使用SASS，可以设置初始变量，比如覆盖 blue 的颜色值、设置默认字体甚至各种响应式断点。</p><p>每一个Bulma组件都有自己的变量集合：</p><p>box组件具有阴影；<br>columns有默认空白；<br>menu有默认的背景色和前景色；<br>button和input的每一种状态（悬浮、活跃、选中）都有对应颜色；<br>……<br>每个文档页面都有可覆盖的变量列表。</p><p>1.5　模块化</p><p>由于Bulma被划分成了多个模块文件，所以按需导入相应代码即可。</p><p>例如，有的开发人员只想使用Bulma的栅格系统，那么创建一个如下所示的SASS文件即可。</p><p>上述 SASS 文件只引入了 Bulma 的 columns 和 column CSS类。</p><p>1.6　列</p><p>Flexbox是一维的栅格系统，这意味着在Bulma中有行或者列的概念。使用Bulma开发网站要考虑列，并将列封装在行或容器中。Bulma的基本功能如下。</p><p>从 columns 行开始。</p><p>在 columns 行中，可以添加一列或者多列，Bulma会基于添加的列计算每列所占空间。​</p><p>在这个例子中，添加的 column 占据了整个浏览器的宽度，因为在 columns 中仅此一列。</p><p>如前所述，每一列的宽度并不固定，但还是要再次强调：添加的列越多，每一列就会越窄，比如有3列，每一列的宽度就是33%；如果是4列，每一列的宽度就是25%。</p><p>1.7　修饰符</p><p>修饰符是额外的CSS类，可以把它们添加到HTML中，以此改变HTML元素的显示效果。以按钮（<button>）为例，通过给它添加修饰符来更改显示效果，如下所示。</p><p>该按钮只是一个简单的通用按钮，下面把它变成Bulma内置的青绿色按钮样式。为了把它的颜色改为主色调，可以给它添加is-primary修饰符。​</p><p>现在按钮变成青绿色了！再给它添加一个“幽灵”按钮的修饰符，让它呈现镂空效果。​</p><p>也可以添加一个 is-loading 修饰符来给按钮增加一个加载中的动画效果，表示某种进行中的状态，比如表单提交流程。</p><p>同样值得注意的是，在添加自定义类之前，尽量利用Bulma现有的类是最佳实践。如果覆盖了某些元素的样式，请继续使用现有的类。</p><p>1.8　组件</p><p>Bulma提供了许多可用的组件。组件是用于实现特定功能模块的代码片段。如果基于这些组件来实现功能，必须按照组件的对外接口格式编写代码。</p><p>有关组件的更多信息和示例，请参见Bulma的组件文档。</p><p>如下是一个卡片组件的示例：</p><p>Bulma还提供了其他组件，比如菜单、下拉菜单、消息提示、模态框等。</p><p>1.9　辅助类</p><p>辅助类（也称工具类）是用于辅助布局的修饰符。它们与传统修饰符的区别是，修饰符是用于改变组件或者元素的视觉效果的，而辅助类是用于处理元素定位的。</p><p>下面是一些常用的辅助类。</p><p>is-marginless：移除当前元素的所有外边距。<br>is-unselectable：使当前文本处于不可选择状态。<br>is-pulled-left ：使得当前的元素靠左布局。</p><p>除上述辅助类外，还有用于响应式和排版的辅助类，可帮助用户更好地实现响应式和文字排版。</p><p>一本书掌握 Bulma</p><p>让你用更少CSS的代码实现更多功能</p><p>《Bulma必知必会》</p><p>杰里米 · 托马斯等 著</p><p>华华 , 张俊达  译</p><p>Bulma 是一个流行的开源 CSS 框架，轻量而易用。借助它，即使完全不会编写CSS，也能轻松创建出美观的网页。本书通过生动实例细致讲解如何使用Bulma 框架从头创建 Web 应用。</p><p>主要内容包括：Bulma 的基本概念与特性，如何用 Bulma 创建页面布局，Bulma 组件如何工作，如何设计具体的 UI 元素，如何将 Bulma 嵌入JavaScript，如何将 Bulma 与流行的前端框架 React、Angular 和 Vue 集成，等等。</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>A标签学习</title>
+      <link href="/2022/12/30/A%E6%A0%87%E7%AD%BE%E5%AD%A6%E4%B9%A0/"/>
+      <url>/2022/12/30/A%E6%A0%87%E7%AD%BE%E5%AD%A6%E4%B9%A0/</url>
+      
+        <content type="html"><![CDATA[<p>一、a 标签的定义、属性和格式<br> <a> 标签定义超链接，用于从一张页面链接到另一张页面，其最重要的属性是 href 属性，它指示链接的目标。</p><p>常用的属性，且 H5 支持：</p><pre><code>              1）href：谷底那个链接指向的页面的URL；              2）target：规定在何处打开链接文档；     格式：&lt;a href=&quot;#&quot; target=&quot;&quot;&gt;超链接&lt;/a&gt;</code></pre><p>二、href 中#和 javascript:void(0)的理解<br>① a href =” “:<br>默认打开的还是当前页面，会刷新一下重新打开。<br>② a href =”#”:<br>浏览器地址栏网址后面会多显示 1 个#。不会刷新页面，会回到页面顶部。点击之后会自动跳转到页面的最上面，因为用了这个方法就相当于点击了一个锚记，但是这个锚记又没写 ID，所以就默认跳转到页面顶部。<br>③ a href =”Javascript: void(0) “:<br>void 是一个操作符，这个操作符指定要计算一个表达式但是不返回值。如果在 void 中写入 0（void(0)），则什么也不执行，从而也就形成了一个死链接，默认阻止，不进行动作。<br>&lt;a href=”javascript:void(0);” οnclick=function() &gt;。onclick 会先于 href 执行。<br>三、target 详解<br>有 4 个保留的目标名称用作特殊的文档重定向操作：<br>①_blank<br>浏览器总在一个新打开、未命名的窗口中载入目标文档。<br>②_self<br>这个目标的值对所有没有指定目标的 <a> 标签是默认目标，它使得目标文档载入并显示在相同的框架或者窗口中作为源文档。这个目标是多余且不必要的，除非和文档标题 <base> 标签中的 target 属性一起使用。<br>③_parent<br>这个目标使得文档载入父窗口或者包含来超链接引用的框架的框架集。如果这个引用是在窗口或者在顶级框架中，那么它与目标 _self 等效。<br>④_top<br>这个目标使得文档载入包含这个超链接的窗口，用 _top 目标将会清除所有被包含的框架并将文档载入整个浏览器窗口。</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>彻底弄懂 Javascript 模块导入导出</title>
       <link href="/2022/12/30/%E5%BD%BB%E5%BA%95%E5%BC%84%E6%87%82-Javascript-%E6%A8%A1%E5%9D%97%E5%AF%BC%E5%85%A5%E5%AF%BC%E5%87%BA/"/>
       <url>/2022/12/30/%E5%BD%BB%E5%BA%95%E5%BC%84%E6%87%82-Javascript-%E6%A8%A1%E5%9D%97%E5%AF%BC%E5%85%A5%E5%AF%BC%E5%87%BA/</url>
