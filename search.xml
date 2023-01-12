@@ -4,6 +4,19 @@
   
     
     <entry>
+      <title>core.js 作用</title>
+      <link href="/2023/01/12/core-js-%E4%BD%9C%E7%94%A8/"/>
+      <url>/2023/01/12/core-js-%E4%BD%9C%E7%94%A8/</url>
+      
+        <content type="html"><![CDATA[<h3 id="core-js-是什么？"><a href="#core-js-是什么？" class="headerlink" title="core.js 是什么？"></a>core.js 是什么？</h3><p>ECMAScript 的迅速成长以及浏览器的频繁更新换代，每年会出现新的 qpi，像：es6 的 Promise，Set 或者 es7 数组新提供的方法 includes，这些新加入的 api，就引出一个词“”polyfill“”(垫片/补丁)，就是社区上提供的一段代码，让我们在不兼容某些新特性的浏览器上，使用该新特性。新功能转换为大部分现代浏览器都可以支持运行的 api 补丁包集合。</p><h3 id="官方描述"><a href="#官方描述" class="headerlink" title="官方描述"></a>官方描述</h3><ul><li>它支持最新的 ECMAScript 标准</li><li>它支持 ECMAScript 标准库提案；</li><li>它支持一些 WHATWG/W3C 标准（跨平台或者 ECMAScript 相关）</li><li>它最大限度的模块化：你能仅仅加载你想要使用的功能；</li><li>它能够不污染全局命名空间</li><li>它和 babel 紧密结合：这能够优化 core.js 引入；</li><li>它是最普遍、最流行的给 javascript 标准库打补丁的方式；</li></ul><h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>主要是因为 IE 浏览器无法兼容新的语法、api，所有就需要用到 core.js 进行兼容性处理，从而解决问题。</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>vue 代码配置</title>
       <link href="/2023/01/12/vue-%E4%BB%A3%E7%A0%81%E9%85%8D%E7%BD%AE/"/>
       <url>/2023/01/12/vue-%E4%BB%A3%E7%A0%81%E9%85%8D%E7%BD%AE/</url>
