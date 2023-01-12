@@ -4,6 +4,19 @@
   
     
     <entry>
+      <title>vue 代码配置</title>
+      <link href="/2023/01/12/vue-%E4%BB%A3%E7%A0%81%E9%85%8D%E7%BD%AE/"/>
+      <url>/2023/01/12/vue-%E4%BB%A3%E7%A0%81%E9%85%8D%E7%BD%AE/</url>
+      
+        <content type="html"><![CDATA[<h2 id="Vetur"><a href="#Vetur" class="headerlink" title="Vetur"></a>Vetur</h2><p>vue2 代码提示插件<br>Vetur 支持.vue 文件的语法高亮显示，除了支持 template 模板以外，还支持大多数主流的前端开发脚本和插件，比如 Sass 和 TypeScript，对前端开发 vue 的小伙伴们非常友好</p><h2 id="vue-helper"><a href="#vue-helper" class="headerlink" title="vue-helper"></a>vue-helper</h2><p>vue2 代码提示插件</p><p>在 template 中点击 vue 组件，vue 变量，vue 方法时都可定位到对应的文件或位置，在点击 vue 组件时跳转到对应文件的前提是该组件是安装相对路径引入（即不支持别名引入），且组件名与组件的文件名一样。比如组件文件名是 select.vue,而引入组件时却是,这种情况不能点击，需把组件文件名改成 common-select.vue</p><h2 id="Vue-Language-Features-Volar"><a href="#Vue-Language-Features-Volar" class="headerlink" title="Vue Language Features (Volar)"></a>Vue Language Features (Volar)</h2><p>vue3 代码提示插件</p><h2 id="TypeScript-Vue-Plugin-Volar"><a href="#TypeScript-Vue-Plugin-Volar" class="headerlink" title="TypeScript Vue Plugin (Volar)"></a>TypeScript Vue Plugin (Volar)</h2><p>ts vu3 代码提示插件</p><h2 id="Vue-3-Snippets"><a href="#Vue-3-Snippets" class="headerlink" title="Vue 3 Snippets"></a>Vue 3 Snippets</h2><p>用于 vue3 的智能代码提示，语法高亮、智能感知、Emmet 等。替代 Vetur 插件，Vetur 在 vue2 时期比较流行</p><h2 id="在线代码片段格式化"><a href="#在线代码片段格式化" class="headerlink" title="在线代码片段格式化"></a>在线代码片段格式化</h2><p><a href="https://snippet-generator.app/">目标</a></p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>element ui select 对象 多个参数问题</title>
       <link href="/2023/01/03/element-ui-select-%E5%AF%B9%E8%B1%A1-%E5%A4%9A%E4%B8%AA%E5%8F%82%E6%95%B0%E9%97%AE%E9%A2%98/"/>
       <url>/2023/01/03/element-ui-select-%E5%AF%B9%E8%B1%A1-%E5%A4%9A%E4%B8%AA%E5%8F%82%E6%95%B0%E9%97%AE%E9%A2%98/</url>
