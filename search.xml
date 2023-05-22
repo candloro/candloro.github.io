@@ -4,6 +4,19 @@
   
     
     <entry>
+      <title>wget使用5</title>
+      <link href="/2023/05/22/wget%E4%BD%BF%E7%94%A85/"/>
+      <url>/2023/05/22/wget%E4%BD%BF%E7%94%A85/</url>
+      
+        <content type="html"><![CDATA[<p>一、正确的安装！！！（直接安装请看这里）<br><a href="https://eternallybored.org/misc/wget/">去该网址下载二进制文件</a><br>注意：要根据你的电脑选择 32 位还是 64 位，这很重要</p><p>我下载的是这个，仅供参考<br>显示图片<br><img src="https://img-blog.csdnimg.cn/ea3139452b984cf183f9ea10a54ff5a3.png" alt="复制的图片"><br>然后你会得到一个.zip 格式的文件夹</p><p>解压，解压到哪里都行</p><p>里面有这些东西<br><img src="https://img-blog.csdnimg.cn/84d82e96be7446f2945ae68466887166.png" alt="复制的图片"></p><p>然后将 wget.exe 复制到 C:\Windows\System32 下，就像这样</p><p>然后 win+R→cmd</p><p>输入 wget，出现如下的界面说明安装成功</p><p><img src="https://img-blog.csdnimg.cn/446013b572a5404ca0d776a55b81dcef.png" alt="复制的图片"></p><p>！！ use methods<br><code>wget -P ./happy/data http://www.baidu.com</code></p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>2023准备推的galgame</title>
       <link href="/2023/05/04/2023%E5%87%86%E5%A4%87%E6%8E%A8%E7%9A%84galgame/"/>
       <url>/2023/05/04/2023%E5%87%86%E5%A4%87%E6%8E%A8%E7%9A%84galgame/</url>
