@@ -4,6 +4,19 @@
   
     
     <entry>
+      <title>日记11</title>
+      <link href="/2024/03/26/markdown%E6%8F%92%E4%BB%B6%E4%BD%BF%E7%94%A8/"/>
+      <url>/2024/03/26/markdown%E6%8F%92%E4%BB%B6%E4%BD%BF%E7%94%A8/</url>
+      
+        <content type="html"><![CDATA[<h1 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h1><p><a href="#section1">1.MarkDown简介</a><br><a href="#section2">2.VSCode简介（Visual Studio Code）</a><br><a href="#section1">3.VSCode中的MarkDown环境</a><br><a href="#section1">4.MarkDown相关操作与常用语法</a><br><a href="#section1">-.创建</a><br><a href="#section1">-.标题</a><br><a href="#section1">-.换行</a><br><a href="#section1">-.加粗</a><br><a href="#section1">-.图片</a><br><a href="#section1">-.代码</a><br><a href="#section1">-.引用</a><br><a href="#section1">-.目录</a>  </p><h2 id="MarkDown简介"><a href="#MarkDown简介" class="headerlink" title=" MarkDown简介"></a><a id="section1"></a> MarkDown简介</h2><p>Markdown 是一种轻量级标记语言，一个运行于 Mac OS X、Windows和 Linux 之上的，针对于编写现代Web和云应用的跨平台源代码编辑器<br>Markdown文件后缀名为 .md<br>   1.优点：</p><ul><li>轻量化、易读易写  </li><li>对于图片，图表、数学式都有支持  </li><li>许多网站都广泛使用 Markdown 来撰写文档  </li><li>使用标记语言语法编排文档，简洁明了  </li><li>Markdown可以快速转化为演讲PPT、Word、PDF等产品文档  </li><li>可用于编写说明文档，以“README.md”的文件名保存在软件的目录下面  <h2 id="VSCode简介"><a href="#VSCode简介" class="headerlink" title=" VSCode简介"></a><a id="section2"></a> VSCode简介</h2>Visual Studio Code（简称“VS Code”）是Microsoft在2015年4月30日Build开发者大会上正式宣布一个运行于 Mac OS X、Windows和 Linux 之上的，针对于编写现代Web和云应用的跨平台源代码编辑器<br>不仅仅是源代码编辑器，Visual Studio Code已经成为当前最热门的文本编辑器。</li></ul><p>   1.优点：</p><ul><li>跨平台  </li><li>开源  </li><li>简易  </li><li>可扩展，插件丰富   </li><li>轻量快捷  <h2 id="VSCode简介-1"><a href="#VSCode简介-1" class="headerlink" title=" VSCode简介"></a><a id="section2"></a> VSCode简介</h2>Visual Studio Code（简称“VS Code”）是Microsoft在2015年4月30日Build开发者大会上正式宣布一个运行于 Mac OS X、Windows和 Linux 之上的，针对于编写现代Web和云应用的跨平台源代码编辑器  </li></ul>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>wget使用5</title>
       <link href="/2023/05/22/wget%E4%BD%BF%E7%94%A85/"/>
       <url>/2023/05/22/wget%E4%BD%BF%E7%94%A85/</url>
